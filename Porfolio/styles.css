@@ -1,0 +1,102 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ECF0F1;
+    color: #2C3E50;
+}
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    background-color: #34495E;
+    border-bottom: 4px solid #E74C3C;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #E74C3C;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+h2 {
+    color: #2C3E50;
+    border-bottom: 3px solid #E74C3C;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills-container span {
+    background-color: #3498DB;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project {
+    background-color: white;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    color: #E74C3C;
+}
+
+#contact p a {
+    color: #E74C3C;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}

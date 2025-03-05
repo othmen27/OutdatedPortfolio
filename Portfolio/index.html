@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+ <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Othmen Mhiri</h1>
+      <p>Web Developer | Designer</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <img src="assets/IMG_20250227_232410_534.webp" alt="Your Photo">
+      <h2>About Me</h2>
+      <p>Hi, I'm Othmen, a passionate web developer with expertise in JavaScript, Python, and more. I love creating beautiful and functional websites.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skill-bar">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-level" data-level="90%">90%</div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">Lua</div>
+        <div class="skill-level" data-level="100%">100%</div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">Python</div>
+        <div class="skill-level" data-level="50%">50%</div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">PHP</div>
+        <div class="skill-level" data-level="60%">60%</div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">C#</div>
+        <div class="skill-level" data-level="20%">20%</div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">C</div>
+        <div class="skill-level" data-level="45%">45%</div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">HTML</div>
+        <div class="skill-level" data-level="70%">70%</div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-name">CSS</div>
+        <div class="skill-level" data-level="45%">45%</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h3>Clash Royale RNG Simulator</h3>
+          <div class="project-images">
+            <a href="assets/image.png" data-fancybox="gallery">
+              <img src="assets/image.png" alt="Clash Royale RNG Simulator Screenshot 1">
+            </a>
+            <a href="assets/imag1e.png" data-fancybox="gallery">
+              <img src="assets/imag1e.png" alt="Clash Royale RNG Simulator Screenshot 2">
+            </a>
+            <a href="assets/imeeage.png" data-fancybox="gallery">
+              <img src="assets/imeeage.png" alt="Clash Royale RNG Simulator Screenshot 3">
+            </a>
+          </div>
+          <p>
+            A work-in-progress Roblox game inspired by Clash Royale. Features include:
+            <ul>
+              <li>RNG-based card system</li>
+              <li>Rebirth functionality</li>
+              <li>Trophy system (click to earn trophies)</li>
+              <li>Sell trophies for coins</li>
+              <li>Buy chests with coins</li>
+              <li>Upcoming: Map and additional features</li>
+            </ul>
+          </p>
+          <a href="https://www.roblox.com/games/139399945714971/Clash-Royale-RNG-Simulator-WIP" class="project-link">View Project</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
