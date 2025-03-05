@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><img src="img/nasalogo.png" id="img"></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="mission.html">Current Missions</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to NASA!</h1>
+        <h2>News:</h2>
+        <article>
+            <h3>NASA to make lunar cargo delivery awards to Blue Origin and SpaceX</h3>
+            <div>
+            <p>
+                NASA plans to use cargo versions of Blue Origin’s Blue Moon and SpaceX’s Starship to deliver key infrastructure to the Moon in the early 2030s. Starship will deliver a pressurized rover developed by JAXA no earlier than 2032, while Blue Moon will deliver a lunar habitat no earlier than 2033.
+                These missions build on existing contracts to develop cargo versions of their Human Landing System (HLS) spacecraft, capable of transporting 12-15 metric tons to the lunar surface. NASA will issue formal requests for proposals in early 2025 but has not disclosed the mission costs or reasons for assigning specific tasks to each company. This approach aims to ensure flexibility and a steady cadence of Moon landings for scientific discovery.
+            </p>
+            <img src="img/news01.png" alt="Lunar Lander">
+        </div>
+        </article>  
+        <article>
+            <h3>NASA discovers underground ‘city’ beneath ice sheet in Greenland</h3>
+            <div>
+            <p>What’s old is new again.
+
+                NASA scientists discovered an underground “city” buried 100 feet beneath the ice of Greenland.
+                
+                Researchers were shocked when their advanced radar technology picked up signs of human construction deep beneath the ice of the island territory’s tundra, according to the space agency.
+                
+                Camp Century, an abandoned Cold War-era military installation, was rediscovered 100 feet beneath the ice by a NASA Gulfstream III back in April,<a href="https://earthobservatory.nasa.gov/images/153616/new-view-of-the-city-under-the-ice">according to a news release.</a></p>
+
+            <img src="img/news02.png" alt="Under Ground">
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 NASA</p>
+    </footer>
+    <style>  
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    article h3 {
+    margin-bottom: 10px;
+}
+article > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+    article img {
+        margin-left: 20px;
+        max-width: 40%;
+        height: auto; 
+    }
+    </style>
+</body>
+</html>

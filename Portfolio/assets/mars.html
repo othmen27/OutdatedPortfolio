@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: transparent;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .planet-container {
+            display: flex;
+            align-items: center;
+        }
+        .planet {
+            width: 20em;
+            height: 20em;
+            background: url(./img/mars.jpg);
+            box-shadow: inset -2em -2em 2em #000, -0.5em -0.5em 1em #a05945;
+            border-radius: 50%;
+            background-repeat: repeat;
+            background-size: 200% 100%;
+            position: relative;
+            animation: rotate 10s linear infinite;
+        }
+        .moon {
+            background: url(./img/phobos.jpg);
+            box-shadow: inset -1.5em -1.5em 1.5em #000, -0.2em -0.2em 0.5em #ccc;
+            width: 3em;
+            height: 3em;
+            position: relative;
+            left: -11em;
+            top: 50%;
+            transform: translateX(50%);
+            animation: rotate 5s linear infinite, orbit 20s infinite ease-in-out;
+            z-index: 1;
+            border-radius: 50%;
+            background-repeat: repeat;
+            background-size: 200% 100%;
+        }
+        .text-container {
+            position: relative;
+            margin-left: 20px;
+            transform: translateY(-100%);
+        }
+        p {
+            color: white;
+            background-color: #0056b3;
+            font-size: x-large;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        .ff {
+            display: none;
+            position: absolute;
+            top: -50px; 
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #0056b3;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            white-space: nowrap;
+            z-index: 2;
+        }
+        .text-container:hover .ff {
+            display: block;
+        }
+        @keyframes rotate {
+            to {background-position: -200% 0;}
+        }
+        @keyframes orbit {
+            49% {z-index: 1;}
+            50% {
+                left: 25em;
+                z-index: -1;
+            }
+            99% {z-index: -1;}
+            100% {
+                left: -11em;
+                z-index: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="planet-container">
+        <div class="planet">
+            <div class="moon"></div>
+        </div>
+        <div class="text-container">
+            <p>Mars
+                <span class="ff">Fun Fact: Mars is home to the tallest mountain in the solar system, Olympus Mons, which is about 13.6 miles (22 kilometers) high!</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

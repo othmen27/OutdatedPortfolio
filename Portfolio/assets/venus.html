@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: transparent;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .planet-container {
+            display: flex;
+            align-items: center;
+        }
+        .planet {
+            width: 20em;
+            height: 20em;
+            background: url(./img/venus.jpg);
+            box-shadow: inset -2em -2em 2em #000, -0.5em -0.5em 1em #f0d08b;
+            border-radius: 50%;
+            background-repeat: repeat;
+            background-size: 200% 100%;
+            position: relative;
+            animation: rotate 10s linear infinite;
+        }
+        .text-container {
+            position: relative;
+            margin-left: 20px;
+            transform: translateY(-50%);
+        }
+        p {
+            color: white;
+            background-color: #0056b3;
+            font-size: x-large;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        .ff {
+            display: none;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #0056b3;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            white-space: nowrap;
+            z-index: 2;
+        }
+        .text-container:hover .ff {
+            display: block;
+        }
+        @keyframes rotate {
+            to {background-position: -200% 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="planet-container">
+        <div class="planet"></div>
+        <div class="text-container">
+            <p>Venus
+                <span class="ff">Fun Fact: Venus is the hottest planet in our solar system with an average surface temperature of about 467°C (872°F)!</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
